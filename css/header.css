@@ -1,4 +1,4 @@
-header .header-container {
+header  {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -6,22 +6,12 @@ header .header-container {
     flex-direction: row;
 }
 
-header a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block; /* To apply ::first-letter */
-}
-
-header a::first-letter {
-    text-transform: uppercase;
-}
-
 header .logo {
     height: 4rem;
 }
 
-header nav {
-
+header a {
+    font-size: 0.8rem;
 }
 
 header i {

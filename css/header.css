@@ -1,0 +1,34 @@
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; /* To apply ::first-letter */
+}
+
+header a::first-letter {
+    text-transform: uppercase;
+}
+
+header .logo {
+    height: 4rem;
+}
+
+header nav {
+
+}
+
+header i {
+    font-size: 1.5rem;
+}
+
+header nav, header .header-container div {
+    display: flex;
+    gap: 1rem;
+}

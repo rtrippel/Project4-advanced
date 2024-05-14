@@ -19,8 +19,20 @@ body {
 }
 
 header {
-    width: 100%;
     padding: 1rem 5rem;
     border-bottom: var(--border);
 }
 
+header a, footer a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; /* To apply ::first-letter */
+}
+
+header a::first-letter, footer a::first-letter {
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 1.5rem 0;
+}

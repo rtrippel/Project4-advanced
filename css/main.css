@@ -1,0 +1,31 @@
+main section.home {
+    background-image: url("../Starterkit/images/home-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 35rem;
+    background-position: center;
+}
+
+/*Or ":nth-child(n+2)"*/
+main section:not(:first-of-type) {
+    padding: 0 4rem;
+}
+
+main p {
+    font-weight: 200;
+    -webkit-text-stroke: 0.2px var(--main-color); /* Width and color of the stroke */
+}
+
+main section.home div {
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 600px;
+}
+
+main a {
+    border: var(--border);
+    background-color: var(--main-color);
+    padding: 0.3rem 1rem;
+}

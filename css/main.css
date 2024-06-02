@@ -29,6 +29,7 @@ main .home p {
 }
 
 main section.home div {
+    width: 650px;
     padding: 6rem 5rem;
     display: flex;
     flex-direction: column;

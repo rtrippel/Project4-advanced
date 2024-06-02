@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
 :root {
     --main-color: #d3ad7f;
-    --black: #13131a;
+    --black: #121419;
     --bg: #010103;
     --border: .1rem solid rgba(255, 255, 255, .3);
 }
@@ -14,12 +12,21 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2 {
     text-transform: uppercase;
 }
 
 h1 {
     font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 body {
@@ -33,6 +40,10 @@ body a {
     color: inherit;
 }
 
+body i {
+    color: white;
+}
+
 header {
     padding: 1rem 5rem;
     border-bottom: var(--border);
@@ -40,4 +51,8 @@ header {
 
 footer {
     padding: 1.5rem 0;
+}
+
+span {
+    color: var(--main-color);
 }

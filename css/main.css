@@ -1,31 +1,121 @@
+main section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
 main section.home {
     background-image: url("../Starterkit/images/home-img.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 35rem;
     background-position: center;
 }
 
 /*Or ":nth-child(n+2)"*/
 main section:not(:first-of-type) {
-    padding: 0 4rem;
+    padding: 0 6rem;
 }
 
-main p {
+main .home p {
     font-weight: 200;
-    -webkit-text-stroke: 0.2px var(--main-color); /* Width and color of the stroke */
+    -webkit-text-stroke: 0.4px var(--main-color);
+    line-height: 2rem;
+}
+
+.home, .about-us {
+    height: 600px;
 }
 
 main section.home div {
-    padding: 6rem 4rem;
+    padding: 6rem 5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 600px;
 }
 
 main a {
-    border: var(--border);
     background-color: var(--main-color);
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 1.5rem;
+    color: white;
+}
+
+.gray-bg {
+    background-color: var(--black);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img {
+    height: 100%;
+    width: calc(50vw - 4rem);
+    object-fit: cover;
+}
+
+.section-container {
+    display: flex;
+}
+
+.box {
+    height: 100%;
+}
+
+.box.gray-bg {
+    padding: 5rem 1rem;
+}
+
+main .about-us p {
+    font-size: small;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 1.5rem 0;
+}
+
+.our-menu .section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: left;
+}
+
+.element-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+    min-width: calc((100% - (4rem * 2) + (1rem * 4 + 1rem)) /4);
+    aspect-ratio: 1 / 1;
+    border: var(--border);
+}
+
+.element-menu img {
+    width: 45%;
+    height: auto;
+}
+
+.element-menu div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items: flex-end;
+}
+
+.element-menu h3 {
+    font-weight: 300;
+}
+
+.element-menu p {
+    text-decoration: line-through;;
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.75);
 }
